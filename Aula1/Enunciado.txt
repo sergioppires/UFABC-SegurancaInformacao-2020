@@ -1,0 +1,18 @@
+  
+Codifique a cifra de Vigenère, usando alguma linguagem de programação que você conheça. 
+ 
+
+1. Use a expressão algébrica vista em aula, com aritmética modular (resto da divisão) e codificação ASCII para entrada e saída.
+A implementação pode ser bem simplificada, em linha de comando e com a chave fixa no próprio código.
+Entregue o código de duas funcionalidades: cifrar e decifrar
+Responda com suas palavras: por que a expressão algébrica equivale ao uso da Tabela de Vigenère? 
+
+
+  
+2. Desafio: faça um código que tenta descobrir a chave de um texto cifrado com cifra de Vigenère, usando as simplificações e premissas a seguir:
+
+  
+Mensagens relativamente longas cifradas com chave curtas podem preservar a seguinte característica: o caractere mais frequente de todo o texto original também é o mais frequente em todas as posições da chave (ao segmentar o texto original em blocos de tamanho da chave). Em anexo, há dois exemplos de mensagens (texto1.txt e texto2.txt) em que o caractere “espaço em branco” é o mais frequente em todas as posições para chaves com tamanhos pequenos (quatro, por exemplo).
+Considerando que Ci = ( Pi + Ki ) mod (tamanho do alfabeto usado), o caractere mais frequente de um texto cifrado guarda uma relação trivialmente dedutível com a chave e o caractere mais frequente do texto original (Plain text). Qual é?
+Entregue um código que descobre a chave, dado um texto cifrado com Vigenère com uma chave de tamanho fixo (por exemplo 4). Você pode supor que o texto original tem o caractere espaço como o mais frequente.
+Responda: qual foi a chave usada para cifrar o texto texto_cripto.txt?
